@@ -5,8 +5,8 @@ cd "$(dirname "$0")"
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
     python3 -m venv venv
-    ./venv/Scripts/pip install --upgrade pip
-    ./venv/Scripts/pip install python-telegram-bot requests aiohttp
+    ./venv/bin/pip install --upgrade pip
+    ./venv/bin/pip install python-telegram-bot requests aiohttp
 fi
 
 echo "🚀 Starting Locket Gold V2 (Professional Edition)..."
@@ -17,4 +17,4 @@ pkill -f "main.py" 2>/dev/null
 sleep 1
 
 # Run Main
-./venv/Scripts/python main.py
+./venv/bin/python main.py
